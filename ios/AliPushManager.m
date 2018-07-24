@@ -180,6 +180,11 @@ RCT_EXPORT_MODULE()
 
 }
 
++ (BOOL) requiresMainQueueSetup
+{
+    return YES;
+}
+
 + (void)didReceiveLocalNotification:(UILocalNotification *)notification
 {
 	[[NSNotificationCenter defaultCenter] postNotificationName:LocalNotificationReceived
