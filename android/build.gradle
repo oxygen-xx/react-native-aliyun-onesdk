@@ -9,6 +9,13 @@ android {
         targetSdkVersion 23
         versionCode 1
     }
+
+    lintOptions {
+        checkReleaseBuilds false
+        //If you want to continue even if errors found use following line
+        abortOnError false
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -38,10 +45,4 @@ dependencies {
     compile 'com.alibaba:fastjson:1.1.52.android'
 
     // From node_modules
-}
-
-lintOptions {
-    checkReleaseBuilds false
-    //If you want to continue even if errors found use following line
-    abortOnError false
 }
