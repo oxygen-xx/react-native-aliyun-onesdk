@@ -27,10 +27,10 @@ repositories {
         url "$projectDir/../../../node_modules/react-native/android"
     }
     maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
-
+    google()
+    jcenter()
     maven { url "https://jitpack.io" }
     mavenLocal()
-    jcenter()
 }
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
@@ -38,4 +38,10 @@ dependencies {
     compile 'com.alibaba:fastjson:1.1.52.android'
 
     // From node_modules
+}
+
+lintOptions {
+    checkReleaseBuilds false
+    //If you want to continue even if errors found use following line
+    abortOnError false
 }
