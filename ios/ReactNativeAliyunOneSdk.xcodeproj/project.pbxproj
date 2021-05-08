@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B2089B02646283B0044EFFB /* AliyunOSSiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B2089AC2646283B0044EFFB /* AliyunOSSiOS.framework */; };
+		8B2089B12646283B0044EFFB /* CloudPushSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B2089AD2646283B0044EFFB /* CloudPushSDK.framework */; };
+		8B2089B22646283B0044EFFB /* UTDID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B2089AE2646283B0044EFFB /* UTDID.framework */; };
+		8B2089B32646283B0044EFFB /* AlicloudUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B2089AF2646283B0044EFFB /* AlicloudUtils.framework */; };
 		BA6496F91E00DF9D006B0C08 /* AliPushManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6496F81E00DF9D006B0C08 /* AliPushManager.m */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +27,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8B2089AC2646283B0044EFFB /* AliyunOSSiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AliyunOSSiOS.framework; path = OneSDK/AliyunOSSiOS.framework; sourceTree = "<group>"; };
+		8B2089AD2646283B0044EFFB /* CloudPushSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudPushSDK.framework; path = OneSDK/CloudPushSDK.framework; sourceTree = "<group>"; };
+		8B2089AE2646283B0044EFFB /* UTDID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UTDID.framework; path = OneSDK/UTDID.framework; sourceTree = "<group>"; };
+		8B2089AF2646283B0044EFFB /* AlicloudUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlicloudUtils.framework; path = OneSDK/AlicloudUtils.framework; sourceTree = "<group>"; };
 		BA6496761E00D591006B0C08 /* libReactNativeAliyunOneSdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReactNativeAliyunOneSdk.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6496F81E00DF9D006B0C08 /* AliPushManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliPushManager.m; sourceTree = "<group>"; };
 		BA6497291E00F5F1006B0C08 /* AliPushManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliPushManager.h; sourceTree = "<group>"; };
@@ -33,18 +41,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B2089B02646283B0044EFFB /* AliyunOSSiOS.framework in Frameworks */,
+				8B2089B12646283B0044EFFB /* CloudPushSDK.framework in Frameworks */,
+				8B2089B22646283B0044EFFB /* UTDID.framework in Frameworks */,
+				8B2089B32646283B0044EFFB /* AlicloudUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B2089AB2646283B0044EFFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B2089AF2646283B0044EFFB /* AlicloudUtils.framework */,
+				8B2089AC2646283B0044EFFB /* AliyunOSSiOS.framework */,
+				8B2089AD2646283B0044EFFB /* CloudPushSDK.framework */,
+				8B2089AE2646283B0044EFFB /* UTDID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA64966D1E00D591006B0C08 = {
 			isa = PBXGroup;
 			children = (
 				BA6496F81E00DF9D006B0C08 /* AliPushManager.m */,
 				BA6497291E00F5F1006B0C08 /* AliPushManager.h */,
 				BA6496771E00D591006B0C08 /* Products */,
+				8B2089AB2646283B0044EFFB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +121,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = BA64966D1E00D591006B0C08;
@@ -221,6 +246,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../../../ios/OneSDK",
+					"$(PROJECT_DIR)/OneSDK",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -240,6 +266,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../../../ios/OneSDK",
+					"$(PROJECT_DIR)/OneSDK",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
