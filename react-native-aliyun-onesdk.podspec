@@ -9,6 +9,7 @@ Pod::Spec.new do |spec|
   spec.source              = { :git => "https://github.com/oxygen-xx/react-native-aliyun-onesdk.git"  }
   spec.source_files        = 'ios/*'
   spec.platform            = :ios, "7.0"
-  spec.vendored_frameworks = ['OneSDK/AlicloudUtils.framework', 'OneSDK/AliyunOSSiOS.framework', 'OneSDK/CloudPushSDK.framework', 'OneSDK/UTDID.framework']
+  spec.vendored_frameworks = ['OneSDK/AlicloudUtils.framework', 'OneSDK/CloudPushSDK.framework', 'OneSDK/UTDID.framework']
   spec.dependency 'React'
+  spec.dependency 'AliyunOSSiOS'
 end
